@@ -1,4 +1,4 @@
-# Урок **devman** "[Оставляем заметки](https://dvmn.org/modules/novice-code-reading/lesson/evernote-example/)"
+# "[Оставляем заметки](https://dvmn.org/modules/novice-code-reading/lesson/evernote-example/)"
 
 Скрипты этого проекта позволяют выполнить базовые действия с блокнотами и заметками [Evernote](http://evernote.com):
 - просмотреть список блокнотов пользователя;
@@ -19,29 +19,29 @@
 `cd X:\MyProjects`, где `X` ваш диск
 
 Выполните 
-```
+`
 git clone https://github.com/redbor24/evernote-example
 cd evernote-example
-```
+`
 
 ### Создание виртуального окружения
 Если у вас на компьютере установлено несколько версий Python, то для запуска проекта вам потребуется создать
 виртуальное окружение и указать в нём нужную версию интерпретатора Python. Например, для этого можно
 использовать `VirtualEnv`.
 
-```
+`
 pip install virtualenv
 virtualenv env27 -p <путь к установленному Python27>\python.exe
-```
+`
 где `env27` наименование виртуального окружения.
 
 #### Активация виртуального окружения
 `env27\scripts\activate`
 
-### Установка зависимостей
+#### Установка зависимостей
 `pip install -r requirements.txt`
 
-### Конфигурация проекта
+#### Конфигурация проекта
 Для работы с API Evernote потребуется:
 - зарегистрироваться на [dev.evernote.com](https://dev.evernote.com/doc/) для получения `Consumer Secret` и `Developer token`;
 - получить [Developer Token для песочницы](https://sandbox.evernote.com/api/DeveloperToken.action).
