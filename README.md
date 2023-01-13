@@ -1,4 +1,4 @@
-# "[Оставляем заметки](https://dvmn.org/modules/novice-code-reading/lesson/evernote-example/)"
+# Урок "[Оставляем заметки](https://dvmn.org/modules/novice-code-reading/lesson/evernote-example/)"
 
 Скрипты этого проекта позволяют выполнить базовые действия с блокнотами и заметками [Evernote](http://evernote.com):
 - просмотреть список блокнотов пользователя;
@@ -63,39 +63,39 @@ virtualenv env27 -p <путь к установленному Python27>\python.e
 ### Как пользоваться
 
 #### Файл list_notebooks.py
-`commandline
-$ python list_notebooks.py
-`
+```commandline
+python list_notebooks.py
+```
 Этот файл выведет в терминал ID и названия всех ваших блокнотов.
 
 #### Файл dump_inbox.py
-`commandline
-$ python dump_inbox.py
-`
-`commandline
-$ python dump_inbox.py 20
-`
+```commandline
+python dump_inbox.py
+```
+
 Этот файл выведет в терминал входящие заметки из вашего блокнота для входящих. 
 В качестве аргумента вы можете передать число последних заметок, которые хотите увидеть.
 Количество по умолчанию -- 10.
 
 #### Файл add_note2journal.py
-`commandline
-$ python add_note2journal.py
-`
+```commandline
+python add_note2journal.py
+```
+
 Этот файл создает заметку в блокноте "Дневник". Заметка будет копией вашего шаблона для заметок.
 После успешного создания в терминал будет выведен заголовок заметки.
 
 По умолчанию заметка создается от текущего дня. 
 Чтобы создать заметку с другой датой, передайте в качестве аргумента либо дату в формате ГГГГ-ММ-ДД...
-`commandline
-$ python add_note2journal.py 2017-10-21
-`
+
+```commandline
+python add_note2journal.py 2017-10-21
+```
 ...либо число дней, на которое вы хотите сместить дату заметки от сегодняшней даты 
 (поставьте `-` перед числом, чтобы сместить дни в прошлое):
-`commandline
-$ python add_note2journal.py 5
-`
-`commandline
-$ python add_note2journal.py -5
-`
+
+```commandline
+python add_note2journal.py
+```
+
+Обновите страницу с заметками в браузере. Первой в списке будет заметка с заголовком, заданным в шаблонной заметке.
